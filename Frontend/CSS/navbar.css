@@ -1,0 +1,80 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 10px 0px;
+  background-color: var(--color-dark-secondary);
+}
+
+.navBar > div {
+  display: flex;
+  gap: 5px;
+}
+
+
+.menuList a,
+.shortcutList a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+  color: white;
+  font-size: 14px;
+}
+
+.menuList a:hover,
+.shortcutList a:hover {
+  background-color: var(--color-dark-secondary);
+}
+
+.menuList img,
+.shortcutList img {
+  width: 24px;
+  height: 24px;
+}
+
+.navIcon.active {
+  background-color: #0866FF;
+}
+
+.navIcon.active .icon {
+  fill: white;
+}
+
+.navIcon.right{
+border-radius: 50%;
+}
+.navIcon:hover {
+  background-color: #65686C;
+}
+
+
+
+.navLeft, .navRight {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navCenter {
+  display: flex;
+  justify-content: center; /* <-- CAMBIO CLAVE */
+  align-items: center;
+  gap: 20px; /* <-- SEPARACIÓN REAL ENTRE ICONOS */
+}
+
+.navCenter .navIcon {
+  margin: 0 10px; /* separa los íconos lateralmente */
+}
+
+
+.navIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background 0.2s ease;
+}

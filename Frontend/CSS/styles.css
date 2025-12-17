@@ -1,0 +1,158 @@
+@import url('./navbar.css');
+@import url('./aside.css');
+@import url('./main.css');
+
+
+:root {
+  --color-dark-primary:#1C1C1D;
+  --color-dark-secondary:#252728;
+  --color-dark-terciary:#333334;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  margin: 5px 0;
+}
+
+.searchWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px 10px 10px 35px; /* padding izquierdo para la lupa */
+  border-radius: 20px;
+  border: none;
+  background-color: var(--color-dark-terciary);
+  color: white;
+  outline: none;
+}
+
+.searchIcon {
+  position: absolute;
+  top: 51%;
+  left: 10px;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  fill: #ccc;
+  pointer-events: none;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.createPostInput {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+  background-color: var(--color-dark-terciary);
+}
+
+.createPost {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  background-color: var(--color-dark-secondary);
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+.createPost img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ccc;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  fill: #B0B3B8;
+}
+
+.photo{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ver{
+  background-color: white;
+}
+
+.span{
+  font-size: 12px;
+}
+
+.separator {
+  margin: 20px 0 10px;
+  border: none;
+  height: 1px;
+  background-color: #444;
+}
+
+.shortcutsTitle {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .leftAside,
+  .rightAside {
+    display: none;
+  }
+
+  .mainSection {
+    width: 100%;
+  }
+
+  .navCenter {
+    display: none;
+  }
+
+  .searchInput {
+    display: none;
+  }
+
+  .navBar {
+    flex-wrap: wrap;
+  }
+
+  .navLeft, .navRight {
+    flex: 1 1 100%;
+    justify-content: space-between;
+  }
+}
