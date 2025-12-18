@@ -32,3 +32,40 @@
 .asideItems span {
   font-weight: 500;
 }
+
+.rightAside{
+  width: 250px;
+  background-color: var(--color-dark-secondary);
+  padding: 10px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rightAside h3{
+  margin-bottom: 10px;
+  color: #ccc;
+  font-size: 14px;
+}
+
+.contact{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  transition: bacground 0.2s;
+}
+
+.contact:hover{
+  cursor: pointer;
+  background-color: var(--color-dark-terciary);
+}
+
+.contact img{
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
