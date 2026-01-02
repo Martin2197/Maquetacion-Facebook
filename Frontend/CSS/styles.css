@@ -156,3 +156,34 @@ a {
     justify-content: space-between;
   }
 }
+
+@media (max-width: 768px) {
+  .navCenter {
+    display: none !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .navBar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navLeft, .navRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navLeft {
+    flex: 1;
+  }
+
+  .navRight {
+    flex: 1;
+    justify-content: flex-end;
+  }
+}
